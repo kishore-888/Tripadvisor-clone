@@ -1,0 +1,1455 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    width: 97%;
+    top:0;
+    margin-left: 12px;
+    padding: 10px;
+    position: sticky;
+    background-color: white;
+    z-index: 1;
+
+}
+
+
+.nav__s1__title {
+    font-size: 28px;
+
+}
+
+.nav__s2__title {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Gabarito', sans-serif;
+
+}
+
+.nav__s3__title {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 0;
+
+}
+
+.nav__s3__button {
+    display: flex;
+    padding: 15px;
+    width: 90px;
+    justify-content: center;
+    border-radius: 30px;
+    border: transparent;
+    background-color: transparent;
+
+}
+
+.nav__s3__button:hover {
+    background-color: rgba(233, 227, 227, 0.938);
+}
+
+.nav__s1__title:hover {
+    cursor: pointer;
+}
+
+.Dr {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Gabarito', sans-serif;
+    font-size: medium;
+}
+
+.Dr:hover {
+    cursor: pointer;
+    background-color: rgba(233, 227, 227, 0.938);
+    width: 80px;
+
+}
+
+
+.Ts:hover {
+    margin: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Rw:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Ft:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.img1 {
+    margin-top: 10px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.img2 {
+    margin-right: 5px;
+    width: 2px;
+    height: 2px;
+    cursor: pointer;
+
+}
+
+
+.img3 {
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+
+}
+
+.s_vertical {
+    color: rgb(177, 171, 171);
+    font-family: 'Gabarito', sans-serif;
+}
+
+.inr {
+    font-family: 'Gabarito', sans-serif;
+    cursor: pointer;
+}
+
+.log_in {
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Gabarito', sans-serif;
+    margin-left: 5px;
+}
+
+.log_in:hover {
+    cursor: pointer;
+    background-color: rgb(162, 158, 158);
+    border: transparent;
+}
+
+
+.Categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.Categories__button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Gabarito', sans-serif;
+
+}
+
+.text-container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.Categories__button:hover{
+    border-bottom: solid black 2px;
+}
+
+.Categories__button:focus{
+    border-bottom: solid black 2px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.search_1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.Searchbar {
+    margin-top: 7px;
+    padding: 5px;
+    border: solid rgb(221, 220, 220) 1px;
+    border-radius: 30px;
+    width: 55%;
+    align-items: center;
+
+
+}
+
+.Searchbar input {
+    border: none;
+    font-size: 16px;
+    width: 85%;
+    background-color: transparent;
+
+}
+
+.Searchbar input:focus {
+    outline: none;
+}
+
+
+.Sbt:hover {
+    background-color: #7ed5b5;
+    cursor: pointer;
+}
+
+
+.Sbt {
+    padding: 15px;
+    border-radius: 30px;
+    width: 12%;
+    font-family: 'gabarito', sans-serif;
+    border: none;
+    font-size: 18px;
+    background-color: #34d499;
+
+}
+
+.Sbt:focus {
+    outline: none;
+}
+
+#search_icon:hover {
+    cursor: pointer;
+}
+
+.Restaurant_foods_image {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+
+
+}
+
+.Restaurant_foods_image img {
+    width: 75%;
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-left: 12%;
+
+}
+
+.Restaurant_foods_image__offer {
+    width: 65%;
+    border: none;
+    color: white;
+    padding: 2%;
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    font-size: 20px;
+
+
+}
+
+.paragraph_t1 {
+    position: absolute;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.Winners_section {
+    position: absolute;
+    top: 80%;
+    left: 14%;
+    background-color: white;
+    color: black;
+    font-family: 'Gabarito', sans-serif;
+    padding: 15px;
+    margin-top: 22px;
+    font-size: 17px;
+    border-radius: 25px;
+
+}
+
+.container_3 {
+    background-color: #EAFAF4;
+    border: none;
+    width: 75%;
+    height: 200px;
+    margin-top: 55px;
+    margin-left: 12%;
+    position: relative;
+
+}
+
+.container_3 {
+    cursor: pointer;
+}
+
+.ts1 {
+    color: black;
+    border: none;
+    width: 100%;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-top: 38px;
+    margin-left: 25px;
+}
+
+.ts1 {
+    cursor: pointer;
+}
+
+
+.ts2 {
+    color: black;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-left: 25px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ts2 {
+    cursor: pointer;
+}
+
+.App {
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.App:hover {
+    cursor: pointer;
+    background-color: rgb(95, 89, 89);
+}
+
+.cap2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 200px;
+
+}
+
+.trs_img {
+    position: absolute;
+    color: white;
+    bottom: 2%;
+    right: 2%;
+    font-size: 18px;
+}
+
+.trs_img img {
+    bottom: 1%;
+    border-radius: 7px;
+
+}
+
+.Winners_section:hover {
+    cursor: pointer;
+    background-color: #e4edea;
+
+}
+
+
+
+.trip_booking_s1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12%;
+
+
+}
+
+
+.H_paragraph {
+    margin-top: 7px;
+    color: #878080;
+}
+
+.recommended__container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 15px;
+    height:320px;
+
+
+}
+
+.Hillstation-card {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.recommended__container:hover {
+    cursor: pointer;
+}
+
+
+
+.Hill1 {
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+.circle1 {
+    position: absolute;
+    font-size: 24px;
+    left: 230px;
+    bottom: 260px;
+    background-color: #e4edea;
+    border-radius: 11px;
+}
+
+.circle1:hover {
+    background-color: #f9fdfc;
+
+}
+
+.Hill2 {
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.circle2 {
+    position: absolute;
+    font-size: 24px;
+    left: 515px;
+    bottom: 260px;
+    background-color: #e4edea;
+    border-radius: 11px;
+}
+
+.circle2:hover {
+    background-color: #f9fdfc;
+
+}
+
+
+.Hill3 {
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.circle3 {
+    position: absolute;
+    font-size: 24px;
+    left: 800px;
+    bottom: 260px;
+    background-color: #e4edea;
+    border-radius: 11px;
+}
+
+.circle3:hover {
+    background-color: #f9fdfc;
+
+}
+
+
+
+.Hill4 {
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.circle4 {
+    position: absolute;
+    font-size: 24px;
+    left: 1085px;
+    bottom: 260px;
+    background-color: #e4edea;
+    border-radius: 11px;
+}
+
+.circle4:hover {
+    background-color: #f9fdfc;
+
+}
+
+
+#arrow {
+    border-radius: 19px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 1110px;
+    bottom: 130px;
+    font-size: 40px;
+}
+
+
+#arrow:hover {
+    background-color: #878080;
+}
+
+.swipe1{
+    display: none;
+}
+
+
+
+.trip_booking_s2 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.H_paragraph2 {
+    margin-top: 7px;
+    color: #878080;
+}
+
+.recommended__container2 {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    gap: 15px;
+
+
+}
+
+.Hillstation-card2 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.recommended__container2:hover {
+    cursor: pointer;
+}
+
+
+
+.Hill1-1 {
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill2-1 {
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill3-1 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill4-1 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+#arrow2 {
+    border-radius: 19px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 1110px;
+    bottom: 130px;
+    font-size: 40px;
+}
+
+#arrow2:hover {
+    background-color: #878080;
+}
+
+#vac1 {
+    position: absolute;
+    color: white;
+    left: 10px;
+    bottom: 35px;
+    font-size: 18px;
+    font-family: 'Gabarito', sans-serif;
+
+}
+
+#vac2 {
+    position: absolute;
+    color: white;
+    left: 290px;
+    bottom: 35px;
+    font-size: 18px;
+    font-family: 'Gabarito', sans-serif;
+
+}
+
+#vac3 {
+    position: absolute;
+    color: white;
+    left: 580px;
+    bottom: 35px;
+    font-size: 18px;
+    font-family: 'Gabarito', sans-serif;
+
+}
+
+#vac4 {
+    position: absolute;
+    color: white;
+    left: 870px;
+    bottom: 35px;
+    font-size: 18px;
+    font-family: 'Gabarito', sans-serif;
+
+}
+
+.green_container {
+    margin-top: 200px;
+    background-color: #00AA6C;
+    border: none;
+    width: 86%;
+    height: 70%;
+    margin-top: 55px;
+    position: relative;
+
+}
+
+.green_box {
+    margin-left: 10px;
+}
+
+
+.box_text {
+    position: absolute;
+    font-family: 'Gabarito', sans-serif;
+    top: 10px;
+    top: 35%;
+    left: 52%;
+    font-size: 20px;
+}
+
+.box_text h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.box_text p {
+    text-align: center;
+    color: #575454;
+    font-size: 18px;
+}
+
+.box_text h5 {
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+    padding: 10px;
+
+}
+
+.box_text h5:hover {
+    cursor: pointer;
+    background-color: #e4edea;
+    color: black;
+}
+
+
+
+.more_to_explore_s1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.more_to_explore__container {
+    background-color: antiquewhite;
+    width: 86%;
+    height: 350px;
+
+}
+
+
+.more_to_explore__container h2 {
+    margin-left: 10px;
+
+}
+
+.Hillstation-card_box {
+    display: flex;
+    font-family: 'gabarito', sans-serif;
+    gap: 15px;
+    margin-left: 15px;
+
+}
+
+
+.Hillstation-card3 {
+    font-family: 'gabarito', sans-serif;
+
+
+}
+
+.more_to_explore__container:hover {
+    cursor: pointer;
+}
+
+
+.Hill1-2 {
+    position: relative;
+    margin-top: 18px;
+    width: 353px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+
+
+.Hill2-2 {
+    position: relative;
+    margin-top: 18px;
+    width: 352px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.Hill3-2 {
+    position: relative;
+    margin-top: 18px;
+    width: 353px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.trip_booking_s3 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.H_paragraph3 {
+    margin-top: 7px;
+    color: #878080;
+}
+
+.recommended__container3 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+
+
+}
+
+.Hillstation-card4 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.recommended__container3:hover {
+    cursor: pointer;
+}
+
+
+
+.Hill1-3 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill2-3 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill3-3 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill4-3 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.trip_booking_s4 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.H_paragraph4 {
+    margin-top: 7px;
+    color: #878080;
+}
+
+.recommended__container4 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+
+
+}
+
+.Hillstation-card5 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.recommended__container4:hover {
+    cursor: pointer;
+}
+
+
+
+.Hill1-4 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill2-4 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill3-4 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+
+
+.Hill4-4 {
+    position: relative;
+    margin-top: 18px;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.footer_1 {
+    background-color: #FFF7E1;
+    margin-top: 65px;
+    width: 86%;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+
+.footer_image img {
+    position: absolute;
+    width: 38%;
+    height: 300px;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-left: 60%;
+
+}
+
+.footer_image__offer {
+    width: 65%;
+    border: none;
+    color: black;
+    padding: 2%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 20px;
+
+
+}
+
+.paragraph_t2 {
+    position: absolute;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.Winners_section2 {
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    background-color: black;
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    padding: 15px;
+    margin-top: 22px;
+    font-size: 17px;
+    border-radius: 25px;
+
+}
+
+.Winners_section2:hover {
+    cursor: pointer;
+    background-color: #e4edea;
+    color: black;
+}
+
+
+.footer {
+    margin-top: 70px;
+    padding: 30px;
+    background-color: #FAF1ED;
+    color: rgb(80, 76, 76);
+    width: 82%;
+
+}
+
+.footer__one {
+    display: flex;
+    position: relative;
+    gap: 7px;
+}
+
+.footer__one p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.footer_image__offer h1 {
+    font-size: 130%;
+}
+
+.footer__one__s4 {
+    margin: 20px;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+.footer_one img {
+    font-size: 20px;
+}
+
+
+
+.sl1 {
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+}
+
+.sl2 {
+    border-radius: 20px;
+    padding: 5px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.Attribution_links {
+    margin-top: 50px;
+    background-color: #f9fdfc;
+    border: solid black 2px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_icon {
+    font-size: 24px;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.navbar__sb {
+    display: none;
+}
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1400px) {
+    .Sbt {
+        width: 100%;
+    }
+
+    .swipe1{
+        color: gold;
+        font-size: bold;
+        display: block;
+    }
+
+    #vac1 {
+        font-size: 20px;
+    }
+
+    #vac2 {
+        font-size: 20px;
+    }
+
+    #vac3 {
+        font-size: 20px;
+    }
+
+    #vac4 {
+        font-size: 20px;
+    }
+
+    .circle1{
+        left: 220px;
+        bottom: 250px;
+    }
+    .circle2{
+        left: 485px;
+        bottom: 250px;
+    }
+    .circle3{
+        left: 750px;
+        bottom: 250px;
+    }
+    .circle4{
+        left: 1015px;
+        bottom: 250px;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    #arrow2 {
+        display: none;
+    }
+
+    .Hill1 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .Hill2 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .Hill3 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .Hill4 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+    .recommended__container{
+        flex-basis: 40%;
+    }
+
+    .recommended_container2 {
+        flex-basis: 40%;
+    }
+
+    .recommended_container3 {
+        flex-basis: 40%;
+    }
+
+    .Hillstation-card_box {
+        flex-basis: 40%;
+    }
+
+    .recommended_container4 {
+        flex-basis: 40%;
+    }
+
+    .recommended_container5 {
+        flex-basis: 40%;
+    }
+
+    .footer__one__s3 {
+        display: none;
+    }
+    
+    .Restaurant_foods_image__offer{
+        font-size: 50%;
+    }
+    .paragraph_t1{
+        font-size: 10px;
+        color: gold;
+    }
+    .Categories{
+        gap:5px;
+    }
+    .ts1{
+        font-size:80% ;
+    }
+    .ts2{
+        font-size:60%;
+    }
+    .box_text p{
+        font-size:80%;
+    }
+    .more_to_explore__container{
+        overflow-x: scroll;
+        width: 85%;
+    }
+
+    .recommended__container3{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .recommended__container4{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .green_box{
+        width: 40%;
+    }
+    .green_box img{
+        width: 400px;
+        height: 370px;
+    }
+    .box_text p{
+        font-size: 14px;
+        color: #87cbb2;
+    }
+    .box_text{
+        font-size:60%;
+    }
+    .trip_booking_s2{
+        margin-top:100px;
+    }
+    .recommended__container{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .recommended__container2{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .Hillstation-card_box{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .footer{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .navbar__sb {
+        margin-left: -20%;
+    }
+  
+    .nav__s2__title,
+    .nav__s3__title {
+        display: none;
+    }
+
+    .navbar__sb {
+        display: block;
+        margin-top: 20px;
+        font-size: large;
+    }
+    .Categories{
+        display: none;
+    }
+    .swipe1{
+        color: gold;
+        font-size: bold;
+        display: block;
+    }
+
+
+    .Sbt {
+        width: 100%;
+    }
+
+    #vac1 {
+        font-size: 20px;
+    }
+
+    #vac2 {
+        font-size: 20px;
+    }
+
+    #vac3 {
+        font-size: 20px;
+    }
+
+    #vac4 {
+        font-size: 20px;
+    }
+
+    .circle1{
+        left: 220px;
+        bottom: 250px;
+    }
+    .circle2{
+        left: 485px;
+        bottom: 250px;
+    }
+    .circle3{
+        left: 750px;
+        bottom: 250px;
+    }
+    .circle4{
+        left: 1015px;
+        bottom: 250px;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    #arrow2 {
+        display: none;
+    }
+
+    .Hill1 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .Hill2 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .Hill3 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .Hill4 {
+        margin-top: 18px;
+        width: 250px;
+        height: 220px;
+        border-radius: 15px;
+    }
+    .recommended__container{
+        flex-basis: 40%;
+    }
+
+    .recommended_container2 {
+        flex-basis: 40%;
+    }
+
+    .recommended_container3 {
+        flex-basis: 40%;
+    }
+
+    .Hillstation-card_box {
+        flex-basis: 40%;
+    }
+
+    .recommended_container4 {
+        flex-basis: 40%;
+    }
+
+    .recommended_container5 {
+        flex-basis: 40%;
+    }
+
+    .Winners_section {
+        display: none;
+    }
+
+    .Winners_section2 {
+        display: none;
+    }
+
+    .box_text h5 {
+        display: none;
+    }
+
+    .footer__one__s4 {
+        display: none;
+    }
+
+    .footer__one__s3 {
+        display: none;
+    }
+    
+    .Restaurant_foods_image__offer{
+        font-size: 50%;
+    }
+    .paragraph_t1{
+        font-size: 10px;
+        color: gold;
+    }
+    .Categories{
+        gap:5px;
+    }
+    .ts1{
+        font-size:80% ;
+    }
+    .ts2{
+        font-size:60%;
+    }
+    .box_text p{
+        font-size:80%;
+    }
+    .more_to_explore__container{
+        overflow-x: scroll;
+        width: 85%;
+    }
+
+    .recommended__container3{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .recommended__container4{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .green_box{
+        width: 40%;
+    }
+    .green_box img{
+        width: 200px;
+        height: 370px;
+    }
+    .box_text p{
+        font-size: 14px;
+        color: #87cbb2;
+    }
+    .box_text{
+        font-size:60%;
+    }
+    .trip_booking_s2{
+        margin-top:100px;
+    }
+    .recommended__container{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .recommended__container2{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .Hillstation-card_box{
+        overflow-x: scroll;
+        width: 85%;
+    }
+    .footer{
+        width: 70%;
+    }
+
+}

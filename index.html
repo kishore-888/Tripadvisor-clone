@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navbar__sb">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav__s1">
+
+            <h1 class="nav__s1__title"><img class="img1" src="./images/tripadvisor.png">Tripadvisor<img class="img2"
+                    src="./images/registered.png"></h1>
+        </div>
+        <div class="nav__s2__title">
+            <button class="Dr">Discover</button>
+            <p class="Ts">Trips</p>
+            <p class="Rw">Review</p>
+            <p class="Ft">Flights</p>
+        </div>
+        <div class="nav__s3__title">
+            <button class="nav__s3__button"><img class="img3" src="./images/globe.png" alt="globe-image">
+                <p class="s_vertical">|</p>
+                <p class="inr">INR</p>
+            </button>
+            <button class="log_in">Sign in</button>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <p id="SearchAllText">Where to?</p>
+        <p id="HotelsText" class="hidden">Stay somewhere great</p>
+        <p id="ThingstoDoText" class="hidden">Do something fun</p>
+        <p id="RestaurantsText" class="hidden">Find places to eat</p>
+        <p id="HolidayHomesText" class="hidden">Explore places to rent</p>
+    </div>
+
+    <div class="Categories">
+        <button class="Categories__button" id=Sa onclick="changeText('SearchAll')"><img src="./images/house.png"> Search
+            All</button>
+        <button class="Categories__button" id=Hs onclick="changeText('Hotels')"><img src="./images/bed.png">
+            Hotels</button>
+        <button class="Categories__button" id=TD onclick="changeText('ThingstoDo')"><i class="fa-solid fa-ticket"
+                style="color: #01060e;"></i> Things to Do</button>
+        <button class="Categories__button" id=Rs onclick="changeText('Restaurants')"><i class="fa-solid fa-utensils"
+                style="color: #000000;"></i> Restaurants</button>
+        <button class="Categories__button" id=HH onclick="changeText('HolidayHomes')"><i class="fa-solid fa-house"
+                style="color: #010813;"></i> Holiday Homes</button>
+    </div>
+
+    <div class="search_1">
+        <div class="Searchbar">
+            <div><i id=search_icon class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Places to go, things to do, hotels...">
+                <button class="Sbt">Search</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+        function changeText(textId) {
+            // Hide all texts
+            const allTexts = document.querySelectorAll('.text-container p');
+            allTexts.forEach(text => text.classList.add('hidden'));
+
+
+
+
+            // Show the selected text
+            const selectedText = document.getElementById(textId + 'Text');
+            selectedText.classList.remove('hidden');
+        }
+
+    </script>
+    </div>
+
+    <div class="Restaurant_foods_image">
+        <img src="./images/header_image.jpg" alt="Restaurant_foods_image">
+        <div class="Restaurant_foods_image__offer">
+            <h1>Travellers' Choice Best of the Best Restaurants </h1>
+            <p class="paragraph_t1">From the dining to neighbourhood faves-the results are in.</p>
+        </div>
+        <div>
+            <p class="Winners_section">See the winners</p>
+        </div>
+    </div>
+
+    <div class="container_3">
+        <div class="travel_section">
+            <p class="ts1">The both of you could use a trip.</p>
+            <p class="ts2">Plan the holiday you deserve with our app.</p>
+            <button class="App">Download our app</button>
+            <img class="cap2" src="./images/2ndcaption.jpg" alt="travel_bags_img">
+            <h4 class="trs_img"><img src="./images/tripadvisor (1).png"> Tripadvisor</h4>
+        </div>
+
+    </div>
+
+
+    <div class="trip_booking_s1">
+        <h2>Ways to tour Hill Stations</h2>
+        <p class="H_paragraph">Book these experiences for a close-up look at Hill Stations.</p><h2 class="swipe1">Swipe<i id="arrow_s1" class="fa-solid fa-circle-arrow-right"
+            style="color: #b1bac8;"></i></h2>
+        <div class="recommended__container">
+            <div class="Hillstation-card">
+                <img class="Hill1" src="./images/Ooty.jpg">
+                <img class="circle1" src="./images/circle.png">
+                <h4>Ooty: Queen of Hill Stations</h4>
+                <p><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"
+                        style="color: #48c79c;"></i><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i
+                        class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"
+                        style="color: #48c79c;"></i> 17</p>
+                <h5>from <i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>6,649 per adult</h5>
+
+            </div>
+            <div class="Hillstation-card">
+                <img class="Hill2" src="./images/Kodikaanal.jpg">
+                <img class="circle2" src="./images/circle.png">
+                <h4>Kodaikanal: The Princess of Hills</h4>
+                <p><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"style="color: #48c79c;"></i><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"
+                        style="color: #48c79c;"></i><i class="fa-solid fa-circle" style="color: #48c79c;"></i> 15
+                </p>
+                <h5>from <i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>6,600 per adult</h5>
+
+            </div>
+            <div class="Hillstation-card">
+                <img class="Hill3" src="./images/coonoor.jpg">
+                <img class="circle3" src="./images/circle.png">
+                <h4>Coonoor: The Serene Hill Town</h4>
+                <p><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"
+                        style="color: #48c79c;"></i><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i
+                        class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"
+                        style="color: #48c79c;"></i> 14</p>
+                <h5>from <i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>6,570 per adult</h5>
+
+            </div>
+            <div class="Hillstation-card">
+                <img class="Hill4" src="./images/Valparai.jpg"><i id="arrow" class="fa-solid fa-circle-arrow-right"
+                    style="color: #b1bac8;"></i>
+                <img class="circle4" src="./images/circle.png">
+                <h4>Valparai: The Seventh Heaven</h4>
+                <p><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"
+                        style="color: #48c79c;"></i><i class="fa-solid fa-circle" style="color: #48c79c;"></i><i
+                        class="fa-solid fa-circle" style="color: #48c79c;"></i><i class="fa-solid fa-circle"
+                        style="color: #48c79c;"></i> 16</p>
+                <h5>from <i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>6,700 per adult</h5>
+            </div>
+
+
+        </div>
+
+        <div class="trip_booking_s2">
+            <h2>Vibrant Asian Cities</h2>
+            <p class="H_paragraph2">From rich cultural history to psychedelic streets</p><h2 class="swipe1">Swipe<i id="arrow_s1" class="fa-solid fa-circle-arrow-right"
+            style="color: #b1bac8;"></i></h2>
+            <div class="recommended__container2">
+                <div class="Hillstation-card2">
+                    <img class="Hill1-1" src="./images/Hoi An tourist quay (Vietnam).jpg">
+                    <h4 id="vac1">Hoi An tourist quay, Vietnam</h4>
+
+
+                </div>
+                <div class="Hillstation-card2">
+                    <img class="Hill2-1" src="./images/Maya Bay( Ko Phi Phi) Thailand.jpg">
+                    <h4 id="vac2">Maya Bay Ko Phi Phi, Thailand</h4>
+
+
+                </div>
+                <div class="Hillstation-card2">
+                    <img class="Hill3-1" src="./images/Gardens by the Bay(Singapore).jpg">
+                    <h4 id="vac3">Gardens by the Bay, Singapore</h4>
+
+
+                </div>
+                <div class="Hillstation-card2">
+                    <img class="Hill4-1" src="./images/Penida Island (Indonesia).jpg"><i id="arrow2"
+                        class="fa-solid fa-circle-arrow-right" style="color: #b1bac8;"></i>
+                    <h4 id="vac4">Penida Island, Indonesia</h4>
+                </div>
+
+
+            </div>
+
+            <div class="green_container">
+                <div class="green_box"><img src="./images/green_box.png"></div>
+                <div class="box_text">
+                    <h1>Sydney's hidden hits</h1>
+                    <p>For more Sydney recs from travellers, locals, and the Tripadvisor team, check out our hidden gem
+                        guides to the city.</p>
+                    <h5>Read more</h5>
+                </div>
+            </div>
+
+
+            <div class="more_to_explore_s1">
+                <div class="more_to_explore__container">
+                    <h2>More to explore</h2><h2 class="swipe1">Swipe<i id="arrow_s1" class="fa-solid fa-circle-arrow-right"
+                        style="color: #b1bac8;"></i></h2>
+                    <div class="Hillstation-card_box">
+                        <div class="Hillstation-card3">
+                            <img class="Hill1-2" src="./images/Hoi An tourist quay (Vietnam).jpg">
+                            <h4>Hoi An tourist quay, Vietnam</h4>
+
+
+                        </div>
+                        <div class="Hillstation-card3">
+                            <img class="Hill2-2" src="./images/Maya Bay( Ko Phi Phi) Thailand.jpg">
+                            <h4>Maya Bay Ko Phi Phi, Thailand</h4>
+
+
+                        </div>
+                        <div class="Hillstation-card3">
+                            <img class="Hill3-2" src="./images/Gardens by the Bay(Singapore).jpg">
+                            <h4>Gardens by the Bay, Singapore</h4>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="trip_booking_s3">
+                    <h2>Dream Your Next Trip</h2>
+                    <p class="H_paragraph3">Weekend getaways from Chennai(Madras)</p><h2 class="swipe1">Swipe<i id="arrow_s1" class="fa-solid fa-circle-arrow-right"
+                        style="color: #b1bac8;"></i></h2>
+                    <div class="recommended__container3">
+                        <div class="Hillstation-card4">
+                            <img class="Hill1-3" src="./images/Ooty.jpg">
+                            <h4>Ooty: Queen of Hill Stations</h4>
+
+
+                        </div>
+                        <div class="Hillstation-card4">
+                            <img class="Hill2-3" src="./images/Kodikaanal.jpg">
+                            <h4>Kodaikanal: The Princess of Hills</h4>
+
+
+                        </div>
+                        <div class="Hillstation-card4">
+                            <img class="Hill3-3" src="./images/Valparai.jpg">
+                            <h4>Valparai: The Seventh Heaven</h4>
+
+
+                        </div>
+                        <div class="Hillstation-card4">
+                            <img class="Hill4-3" src="./images/coonoor.jpg">
+                            <h4>Coonoor: The Serene Hill Town</h4>
+                        </div>
+
+
+                    </div>
+
+                    <div class="trip_booking_s4">
+                        <h2>Top destinations for your next holiday</h2>
+                        <p class="H_paragraph4">Here's where your fellow travellers are headed</p><h2 class="swipe1">Swipe<i id="arrow_s1" class="fa-solid fa-circle-arrow-right"
+                            style="color: #b1bac8;"></i></h2>
+                        <div class="recommended__container4">
+                            <div class="Hillstation-card5">
+                                <img class="Hill1-4" src="./images/Hoi An tourist quay (Vietnam).jpg">
+                                <h3>Hoi An tourist quay, Vietnam</h3>
+
+
+                            </div>
+                            <div class="Hillstation-card5">
+                                <img class="Hill2-4" src="./images/Maya Bay( Ko Phi Phi) Thailand.jpg">
+                                <h3>Maya Bay Ko Phi Phi, Thailand</h3>
+
+
+                            </div>
+                            <div class="Hillstation-card5">
+                                <img class="Hill3-4" src="./images/Gardens by the Bay(Singapore).jpg">
+                                <h3>Gardens by the Bay, Singapore</h3>
+
+
+                            </div>
+                            <div class="Hillstation-card5">
+                                <img class="Hill4-4" src="./images/Penida Island (Indonesia).jpg">
+                                <h3>Penida Island, Indonesia</h3>
+                            </div>
+
+
+                        </div>
+
+                        <div class="footer_1">
+                            <div class="footer_image">
+                                <img src="./images/footer_image.jpg" alt="footer_image">
+                                <div class="footer_image__offer">
+                                    <h1>Travellers' Choice Best of the Best Restaurants </h1>
+                                    <p class="paragraph_t2">Our top 1% of places, stays, eats, and experiences—decided
+                                        by you.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="Winners_section2">See the winners</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <div class="footer__one">
+                                <div class="footer__one__s1">
+                                    <p>About Tripadvisor</p>
+                                    <p>About Us</p>
+                                    <p>Press</p>
+                                    <p>Resources and Policies</p>
+                                    <p>Careers</p>
+                                    <p>Trust & Safety</p>
+                                    <p>Contact us</p>
+                                    <p> Accessibility Statement</p>
+
+                                    <h1><img src="./images/tripadvisor (1).png">Tripadvisor</h1>
+                                    <p>&copy; 2023 Tripadvisor</p>
+
+                                </div>
+
+                                <div class="footer__one__s2">
+                                    <p>Explore</p>
+                                    <p>Write a review</p>
+                                    <p>Add a Place</p>
+                                    <p>Join</p>
+                                    <p>Travellers' Choice</p>
+                                    <p>GreenLeaders</p>
+                                    <p>Help Centre</p>
+                                    <p>Travel Articles</p>
+
+                                </div>
+
+                                <div class="footer__one__s3">
+                                    <p>Do Business With Us</p>
+                                    <p>Owners & DMO/CVB</p>
+                                    <p>Business Advantage</p>
+                                    <p>Sponsored Placements</p>
+                                    <p>Access our Content API</p>
+                                    <p>Get The App</p>
+                                    <p>iPhone App</p>
+                                    <p>Android App</p>
+
+                                </div>
+
+                                <div class="footer__one__s4">
+                                    <p>Tripadvisor Sites</p>
+                                    <p>Book tours and attraction tickets on Viator</p>
+                                    <select class="sl1">
+                                        <option>INR</option>
+                                        <option>Brazilian real</option>
+                                        <option>Japanese Yen</option>
+                                        <option>Chinese Yen</option>
+                                        <option>UAE Dirham</option>
+                                    </select></tr>
+
+                                    <select class="sl2">
+                                        <option>India</option>
+                                        <option>Brazil</option>
+                                        <option>Japan</option>
+                                        <option>China</option>
+                                        <option>UAE</option>
+                                    </select>
+                                    <table>
+                                        <td></td>
+                                        <td>
+                                            <tr><i class="fa-brands fa-facebook" style="color: #010813;"></i></tr>
+                                            <tr><i class="fa-brands fa-twitter" style="color: #000714;"></i></tr>
+                                            <tr><i class="fa-brands fa-pinterest" style="color: #020c1c;"></i></tr>
+                                            <tr><i class="fa-brands fa-instagram" style="color: #020a18;"></i></tr>
+                                        </td>
+                                    </table>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Attribution_links">
+                            <div>
+                                <p><a href="https://www.flaticon.com/free-icons/tripadvisor"
+                                        title="tripadvisor icons">Tripadvisor icons created by NajmunNahar -
+                                        Flaticon</a> |</p>
+                                <p><a href="https://www.flaticon.com/free-icons/r" title="r icons">R icons created by
+                                        Roundicons Premium - Flaticon</a> |</p>
+                                <p><a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons
+                                        created
+                                        by IcoGhost - Flaticon</a> |</p>
+                                <p><a href="https://www.flaticon.com/free-icons/globe" title="globe icons">Globe icons
+                                        created by srip - Flaticon</a> |</p>
+                                <p><a href="https://www.flaticon.com/free-icons/bed" title="bed icons">Bed icons created
+                                        by
+                                        Aldo Cervantes - Flaticon</a> |</p>
+                                <p><a href="https://www.flaticon.com/free-icons/tripadvisor"
+                                        title="tripadvisor icons">Tripadvisor icons created by Freepik - Flaticon</a> |
+                                </p>
+                                <p><a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons
+                                        created by Pixel perfect - Flaticon</a> |</p>
+                                <p><a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons
+                                        created by Kirill Kazachek - Flaticon</a> |</p>
+
+                            </div>
+                            <div>
+                                <p class="title_icon">Icons used in this website is from the "Flaticon website" icon
+                                    "creators"</p>
+                                <p><img src="./images/arrow.png"></p>
+
+                            </div>
+                        </div>
+
+
+
+
+</body>
+
+</html>
