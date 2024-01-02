@@ -1066,11 +1066,6 @@ body {
 
 /*Media Queries*/
 
-@media screen and (max-width:800px) {
-    body {
-        font-size: 16px;
-    }
-}
 @media screen and (max-width:1400px) {
     .Sbt {
         width: 100%;
@@ -1244,6 +1239,21 @@ body {
     }
 
 }
+
+@media screen and (max-width:930px) {
+    .footer__one__s4{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 16px;
+    }
+   
+}
+
 
 @media screen and (max-width:600px) {
 
@@ -1450,6 +1460,14 @@ body {
     }
     .footer{
         width: 70%;
+
+    }
+
+    .footer__one__s2{
+        margin-left: -10%;
+    }
+    .container_3{
+        display: none;
     }
 
 }
